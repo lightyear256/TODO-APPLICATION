@@ -9,7 +9,7 @@ const mongoose= require('mongoose');
 const JWT_SECRET=process.env.SECRET_KEY;
 mongoose.connect(process.env.DATABASE_URL)
 const app=express();
-// console.log = function() {}; 
+console.log = function() {}; 
 
 app.use(express.json())
 app.use(express.static("./public"));
